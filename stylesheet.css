@@ -1,0 +1,129 @@
+﻿:root {
+  --color-sand: #926239;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-image: url("http://traversymedia.com/downloads/assets/beachshowcase.jpg");
+  box-shadow: inset 0 0 0 2000px rgba(250, 250, 250, 0.3);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+}
+
+.header-n-body {
+  width: 75%;
+  margin: auto;
+  position: relative;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+header {
+  height: 100vh;
+  text-align: center;
+  color: var(--color-sand);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header * h1 {
+  font-size: 2.5em;
+}
+
+header * p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.header-button {
+  margin-top: 50px;
+}
+
+.header-button > a {
+  font-size: 1.25em;
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-sand);
+  padding: 15px 15px;
+  border-radius: 10px;
+  border: 1px solid var(--color-sand);
+  transition: 250ms;
+}
+
+.header-button > a:hover {
+  background-color: var(--color-sand);
+  color: white;
+}
+
+.section-one,
+.section-two,
+.section-three {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.section-one {
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 1em var(--color-sand), 5px 5px 0.7em rgba(0, 0, 0, 0.3);
+  background-color: rgba(146, 98, 57, 0.95);
+  margin: 2.5rem 0;
+  color: rgb(255, 255, 255);
+}
+
+.section-two {
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 1em var(--color-sand),
+    5px 5px 0.7em rgba(250, 250, 250, 0.3),
+    inset 0 0 0 2000px rgba(250, 250, 250, 0.75);
+  margin: 2.5rem 0;
+  color: var(--color-sand);
+}
+
+.cards {
+  margin: 3em 0;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.cards > div {
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 1em var(--color-sand), 5px 5px 0.7em rgba(0, 0, 0, 0.3);
+  background-color: rgba(146, 98, 57, 0.95);
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-sand);
+  color: white;
+  font-size: 15px;
+  align-items: center;
+  padding: 2em;
+}
+
+footer a {
+  text-decoration: none;
+  color: turquoise;
+}
+
+@media (max-width: 870px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+}
